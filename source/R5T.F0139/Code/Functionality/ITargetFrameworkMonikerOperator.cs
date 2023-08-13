@@ -15,6 +15,7 @@ namespace R5T.F0139
             var output = targetFrameworkMoniker.Value switch
             {
                 Z0057.ITargetFrameworkMonikers.NET_6_Constant => Instances.DotnetMajorVersions.V6,
+                Z0057.ITargetFrameworkMonikers.Net_Standard2_1_Constant => Instances.DotnetMajorVersions.V2,
                 _ => throw new Exception($"Unknown target framework moniker: {targetFrameworkMoniker}")
             };
 
